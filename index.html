@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Google</title>
+        <style>
+            body {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 14px;
+            }
+            header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 6px;
+                height: 48px;                
+            }
+            button {
+                position: relative;
+                height: 32px;
+                border: 0px;
+                background: transparent;
+            }
+            button:hover {
+                border: 0px;
+                background: transparent;
+                text-decoration: underline;
+            }
+            input {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            .header-element {
+                box-sizing: border-box;
+                padding: 4px;
+                height: 40px;
+            }
+            #mail {
+                background: transparent;
+            }
+            #pictures {
+                background: transparent;
+            }
+            #menu {
+                padding: 12px;
+                
+            }
+            .round-button {
+                width: 40px;
+                border-radius: 50%;
+                margin-left: 16px;
+            }
+            .round-button:hover {
+                background: lightgray;
+            }
+            .logo{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                width: auto;
+                
+            }
+            .search-field {
+                display: block;
+                margin: 40px auto;
+                padding-left: 10px;
+                height: 50px;
+                width: 550px;
+                border-radius: 25px;
+                border-color: lightgray;
+                border-style: 1px;
+            }
+            .search-container {
+                display: flex;
+                justify-content: center;
+            }
+            .search-button {
+                background: rgb(233, 233, 233);
+                margin: 5px;
+                border-radius: 5px;
+                padding: 5px 10px;
+                width: 120px;
+            }
+            .search-button:hover {
+                background: lightgray;
+            }
+            footer {
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                background: rgb(233, 233, 233);
+                color: gray;
+            }
+            .country {
+                width: 100%;
+                background: rgb(233, 233, 233);
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid lightgray;
+            }
+            .footer-list {
+                display: flex;
+                flex-direction: row;
+            }
+            .footer-button {
+                flex-basis: 200px;
+                color: gray;
+            }
+            #button5 {
+                flex-basis: 650px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id = 'mail' class = 'header-element'><button>Почта</button></div>
+            <div id = 'pictures' class = 'header-element'><button>Картинки</button></div>
+            <div id = 'menu' class = 'header-element round-button'><input type="image" src="/images/dots-menu-svgrepo-com.svg"></div>
+            <div id = 'profile' class = 'header-element round-button'><input type="image" src="/images/logo.svg"></div>
+        </header>
+        <main>
+            <div><img class ='logo' src = '/images/googlelogo_color_272x92dp.png'></div>
+            <form>
+                <input class = 'search-field' type = "search">
+                <div class = 'search-container'>
+                    <button class = 'search-button'>Поиск в Google</button>
+                    <button class = 'search-button'>Мне повезёт</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class = 'country'>MyCountry</div>
+            <nav class = 'footer-list'>
+                <button id = 'button1' class = 'footer-button'>О Google</button>
+                <button id = 'button2' class = 'footer-button'>Реклама</button>
+                <button id = 'button3' class = 'footer-button'>Для бизнеса</button>
+                <button id = 'button4' class = 'footer-button'>Как работает поиск</button>
+                <button id = 'button5' class = 'footer-button'>Интересная статья</button>
+                <button id = 'button6' class = 'footer-button'>Конфиденциальность</button>
+                <button id = 'button7' class = 'footer-button'>Условия</button>
+                <button id = 'button8' class = 'footer-button'>Настройки</button>
+            </nav>
+        </footer>
+    </body>
+ </html>
